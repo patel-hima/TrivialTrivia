@@ -7,14 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
-    @IBOutlet weak var BtnStart: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+     
+    @IBAction func btnStartPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "homeToQuestions", sender: self)
+    }
 }
 
