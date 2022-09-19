@@ -26,6 +26,9 @@ class QuestionsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func btnExitPressed(_ sender: UIButton){
+        self.performSegue(withIdentifier: "questionstoHome", sender: self)
+    }
     @IBAction func answerSelected(_ sender: UIButton) {
         
         let userSelection = sender.currentTitle
@@ -38,8 +41,11 @@ class QuestionsViewController: UIViewController {
             sender.backgroundColor = UIColor(hex: "f55c47")
         }
         
+        
+        
         let endOfTrivia = !questionsData.questionProgression()
         if endOfTrivia{
+            
             self.performSegue(withIdentifier: "questionsToResult", sender: self)}
 
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(refreshUI), userInfo: nil, repeats: false)
@@ -64,8 +70,15 @@ class QuestionsViewController: UIViewController {
         btnOptionFour.tintColor = UIColor(hex: "4a84a6")
         btnOptionFour.backgroundColor = UIColor(hex: "4a84a6")
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "questionsToResult") {
+                let vc = segue.destination as! ResultsViewController
+            vc.score = questionsData.getScore()
+            vc.noOfQue = questionsData.getNoOfQuestions()
+            }
+    }
 }
+
 
 //MARK: - UI Color Extension
 

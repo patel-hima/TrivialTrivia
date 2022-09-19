@@ -61,6 +61,10 @@ struct QuestionsData {
         }
     }
     
+    func getNoOfQuestions() -> Int {
+        return questions.count
+    }
+    
     func getScore() -> Int{
         return score
     }

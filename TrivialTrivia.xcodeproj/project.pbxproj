@@ -16,6 +16,7 @@
 		2915078A28BD82010029BFEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2915078828BD82010029BFEA /* Main.storyboard */; };
 		2915078C28BD82020029BFEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2915078B28BD82020029BFEA /* Assets.xcassets */; };
 		2915078F28BD82020029BFEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2915078D28BD82020029BFEA /* LaunchScreen.storyboard */; };
+		298E2F5A28D7E19D00B7D7F9 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E2F5928D7E19D00B7D7F9 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2915078B28BD82020029BFEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2915078E28BD82020029BFEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2915079028BD82020029BFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		298E2F5928D7E19D00B7D7F9 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				2915078628BD82010029BFEA /* HomeViewController.swift */,
 				2908A76A28C1546C001CB59D /* QuestionsViewController.swift */,
+				298E2F5928D7E19D00B7D7F9 /* ResultsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				2915078728BD82010029BFEA /* HomeViewController.swift in Sources */,
 				2908A76F28C16DF3001CB59D /* QuestionsData.swift in Sources */,
 				2915078328BD82010029BFEA /* AppDelegate.swift in Sources */,
+				298E2F5A28D7E19D00B7D7F9 /* ResultsViewController.swift in Sources */,
 				2908A76B28C1546C001CB59D /* QuestionsViewController.swift in Sources */,
 				2908A76D28C1631F001CB59D /* Questions.swift in Sources */,
 				2915078528BD82010029BFEA /* SceneDelegate.swift in Sources */,
